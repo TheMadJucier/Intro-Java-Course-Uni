@@ -1,0 +1,21 @@
+public class MovingVan extends Truck(){
+	private int groundToFloorOfCargoArea; 
+	private boolean hasRamp;
+	private distanceToCargoArea
+	
+	public MovingVan(int groundToFloorOfCargoArea, boolean hasRamp, String make, int model, int year, int numberOfWheels, int distanceToCargoArea){
+		super(make, model, year, numberOfWheels);
+		
+		this.groundToFloorOfCargoArea = groundToFloorOfCargoArea;
+		this.hasRamp = hasRamp;
+	}
+
+	
+	public String toString(){
+		if(hasRamp){
+			return getCapacity() + ", distance to cargo " + distanceToCargoArea + ", has a ramp
+		} else{
+			return getCapacity() + ", distance to cargo " + distanceToCargoArea + ", has no ramp
+		{
+	}
+}

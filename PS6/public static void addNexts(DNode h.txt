@@ -1,0 +1,42 @@
+public static void addNexts(DNode h){
+	DNode current = tail;
+	Dnode prevNode = tail.prev;
+	//Dnode next;
+	while(current.prev != null){
+		prevNode.next = current;
+		current = prevNode
+		prevNode = current.prev
+	}
+
+
+}
+
+
+public static void printOddsRecur(IntNode first){
+	if(IntNode.next == null){ //no link at end
+		System.out.println("");
+	}
+	int printOdds = printOddsRecur(first.next) 
+	if(first.val % 2 == 0){ //even 
+		System.out.println(first.toString())
+
+	} else{
+		System.out.println("");
+	}
+
+}
+
+public static void printOddsRecur(IntNode first){
+	
+	while(first.next != null){
+		if(first.val % 2 == 0) //even
+		{
+		System.out.println(first.toString())
+		}
+		else //odd
+		{
+		System.out.println("");
+		}
+	}
+
+}
